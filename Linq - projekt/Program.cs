@@ -16,6 +16,7 @@ internal class Program
             Count = g.Count()
         });
 
+
         var weatherByDate = weather.Where(w=>w.Tavg.HasValue).Select(w => new
         {
             Date = w.Date.Date,
